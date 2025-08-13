@@ -16,7 +16,11 @@ export default function Card({
   return (
     <a href={live} target="_blank">
       <article className="flex flex-col gap-3 overflow-clip rounded-md border-2 border-slate-700 p-4 hover:border-[#ff637e]">
-        <img src={imgUrl} alt="" className="w-full" />
+        <img
+          src={imgUrl}
+          alt=""
+          className="h-48 w-full object-cover object-center"
+        />
         <div className="flex items-center gap-2">
           <h2 className="text-[1.2rem] font-semibold">{title}</h2>
           <a href={gitHub}>
