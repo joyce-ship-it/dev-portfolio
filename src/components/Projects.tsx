@@ -3,18 +3,26 @@ import Card from "./Card";
 export default function Projects() {
   const projectData = [
     {
-      id: 1,
+      id: 6,
+      title: "Weather Forecast App",
+      imgUrl: "/images/weather-forecast-app.png",
+      tags: ["React", "Tailwind", "TypeScript", "REST", "Responsive"],
+      live: "https://weather-app-fm30.netlify.app/",
+      gitHub: "https://github.com/joyce-ship-it/adv-weather-app",
+    },
+    {
+      id: 5,
       title: "Rest API country",
       imgUrl: "/images/rest-countries.png",
-      tags: ["React", "Tailwind", "responsive", "REST"],
+      tags: ["React", "Tailwind", "Responsive", "REST"],
       live: "https://rest-api-country-001.netlify.app/",
       gitHub: "https://github.com/joyce-ship-it/rest-api-country",
     },
     {
-      id: 2,
+      id: 4,
       title: "Jobs Filtering UI",
       imgUrl: "/images/jobs-filter.png",
-      tags: ["TypeScript", "React", "Tailwind", "responsive"],
+      tags: ["TypeScript", "React", "Tailwind", "Responsive"],
       live: "https://6898ee68c4e4d000087304ce--jobs-filter-ui.netlify.app/",
       gitHub: "https://github.com/joyce-ship-it/jobs-filter-ui",
     },
@@ -27,7 +35,7 @@ export default function Projects() {
       gitHub: "https://github.com/joyce-ship-it/newspage-ui",
     },
     {
-      id: 4,
+      id: 2,
       title: "Agency landing page UI",
       imgUrl: "/images/agency-landing-page.png",
       tags: ["React", "Tailwind", "responsive"],
@@ -35,7 +43,7 @@ export default function Projects() {
       gitHub: "https://github.com/joyce-ship-it/agency-landing-page",
     },
     {
-      id: 5,
+      id: 1,
       title: "Weather App",
       imgUrl: "/images/weather-api.png",
       tags: ["Vanilla JS", "CSS", "HTML", "API", "asynchronous"],
