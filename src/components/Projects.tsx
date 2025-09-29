@@ -23,7 +23,7 @@ export default function Projects() {
       title: "Jobs Filtering UI",
       imgUrl: "/images/jobs-filter.png",
       tags: ["TypeScript", "React", "Tailwind", "Responsive"],
-      live: "https://6898ee68c4e4d000087304ce--jobs-filter-ui.netlify.app/",
+      live: "https://jobs-filter-ui.netlify.app/",
       gitHub: "https://github.com/joyce-ship-it/jobs-filter-ui",
     },
     {
