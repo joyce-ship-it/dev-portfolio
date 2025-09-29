@@ -6,7 +6,7 @@ export default function Projects() {
       id: 6,
       title: "Weather Forecast App",
       imgUrl: "/images/weather-forecast-app.png",
-      tags: ["React", "Tailwind", "TypeScript", "REST", "Responsive"],
+      tags: ["React", "Tailwind", "TypeScript", "REST"],
       live: "https://weather-app-fm30.netlify.app/",
       gitHub: "https://github.com/joyce-ship-it/adv-weather-app",
     },
@@ -57,7 +57,7 @@ export default function Projects() {
       id="projects"
     >
       <h2 className="text-[1.4rem] font-semibold md:text-[1.8rem]">Projects</h2>
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-4 self-stretch">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-4 self-stretch">
         {projectData.map((project) => {
           return (
             <Card
