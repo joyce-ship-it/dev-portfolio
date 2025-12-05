@@ -12,6 +12,8 @@ function App() {
   function toggleTheme() {
     setTheme((prevVal) => (prevVal === "dark" ? "light" : "dark"));
   }
+  const projectRef = React.useRef<HTMLHeadingElement | null>(null);
+
   return (
     <div
       className={
@@ -20,9 +22,14 @@ function App() {
           : "bg-bg-light text-dark-text min-h-screen"
       }
     >
-      <Header theme={theme} toggle={toggleTheme} dateInfo={dateInfo}></Header>
+      <Header
+        theme={theme}
+        toggle={toggleTheme}
+        dateInfo={dateInfo}
+        projectRef={projectRef}
+      ></Header>
       <About></About>
-      <Projects></Projects>
+      <Projects projectRef={projectRef}></Projects>
       <Footer></Footer>
     </div>
   );

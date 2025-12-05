@@ -1,6 +1,10 @@
 import Card from "./Card";
-
-export default function Projects() {
+import React from "react";
+export default function Projects({
+  projectRef,
+}: {
+  projectRef: React.RefObject<HTMLHeadingElement | null>;
+}) {
   const projectData = [
     {
       id: 6,
@@ -55,6 +59,7 @@ export default function Projects() {
     <main
       className="mx-auto flex max-w-[900px] flex-col items-center gap-4 p-4 pt-[8rem] pb-12"
       id="projects"
+      ref={projectRef}
     >
       <h2 className="text-[1.4rem] font-semibold md:text-[1.8rem]">Projects</h2>
       <div className="grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-4 self-stretch">

@@ -2,15 +2,21 @@ type HeaderPropType = {
   theme: string;
   toggle: () => void;
   dateInfo: string[];
+  projectRef: React.RefObject<HTMLHeadingElement | null>;
 };
 
 import { IoIosMoon } from "react-icons/io";
 import { IoSunnyOutline } from "react-icons/io5";
 
-export default function Header({ theme, toggle, dateInfo }: HeaderPropType) {
+export default function Header({
+  theme,
+  toggle,
+  dateInfo,
+  projectRef,
+}: HeaderPropType) {
   const getHeaderLinkClasses = (theme: string) => {
     const baseClasses =
-      "text-[1.1rem] transition-colors delay-75 duration-200 ease-in-out";
+      "text-[1.1rem] transition-colors delay-75 duration-200 ease-in-out cursor-pointer";
     const themeClasses =
       theme === "dark"
         ? "text-header-text-dark hover:text-header-text-dark-hover"
@@ -33,9 +39,14 @@ export default function Header({ theme, toggle, dateInfo }: HeaderPropType) {
           )}
         </button>
       </div>
-      <a href="#projects" className={`${getHeaderLinkClasses(theme)}`}>
+      <button
+        onClick={() => {
+          projectRef.current?.scrollIntoView({ behavior: "smooth" });
+        }}
+        className={`${getHeaderLinkClasses(theme)}`}
+      >
         Projects
-      </a>
+      </button>
     </div>
   );
 }
