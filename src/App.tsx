@@ -10,7 +10,7 @@ function App() {
   const [day, month, date] = new Date().toString().split(" ");
   const dateInfo = [day, month, date];
   function toggleTheme() {
-    setTheme((prevVal) => (prevVal === "dark" ? "" : "dark"));
+    setTheme((prevVal) => (prevVal === "dark" ? "light" : "dark"));
   }
   return (
     <div
