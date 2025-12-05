@@ -9,7 +9,7 @@ export default function Projects({
     {
       id: 6,
       title: "Weather Forecast App",
-      imgUrl: "/images/weather-forecast-app.png",
+      imgUrl: "/images/weather-app-screenshot.png",
       tags: ["React", "Tailwind", "TypeScript", "REST"],
       live: "https://weather-app-fm30.netlify.app/",
       gitHub: "https://github.com/joyce-ship-it/adv-weather-app",

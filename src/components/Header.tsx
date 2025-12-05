@@ -25,7 +25,7 @@ export default function Header({
     return `${baseClasses} ${themeClasses}`;
   };
   return (
-    <div className="border-black-400 sticky top-0 mx-auto flex max-w-[900px] justify-between rounded-md border-b-2 p-6 backdrop-blur-sm">
+    <div className="border-black-400 sticky top-0 z-4 mx-auto flex max-w-[900px] justify-between rounded-md border-b-2 p-6 backdrop-blur-sm">
       <div className="flex justify-between gap-4">
         <div className="flex gap-2">
           <span> {dateInfo[0]}</span>

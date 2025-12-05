@@ -15,12 +15,14 @@ export default function Card({
 }: cardPropTypes) {
   return (
     <a href={live} target="_blank">
-      <article className="flex flex-col gap-3 overflow-clip rounded-md border-2 border-slate-700 p-4 hover:border-[#ff637e]">
-        <img
-          src={imgUrl}
-          alt=""
-          className="h-48 w-full object-cover object-center"
-        />
+      <article className="group flex flex-col gap-3 rounded-md border-2 border-slate-700 p-4 transition-colors duration-150 hover:ring-2">
+        <div className="overflow-hidden">
+          <img
+            src={imgUrl}
+            alt={title}
+            className="h-48 w-full object-contain transition-transform duration-300 group-hover:scale-125"
+          />
+        </div>
         <div className="flex items-center gap-2">
           <h2 className="text-[1.2rem] font-semibold">{title}</h2>
           <a href={gitHub}>
@@ -30,7 +32,10 @@ export default function Card({
 
         <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
-            <span key={tag} className="border-2 border-slate-600 p-2">
+            <span
+              key={tag}
+              className="rounded-md border-2 border-slate-600 p-2"
+            >
               {tag}
             </span>
           ))}
