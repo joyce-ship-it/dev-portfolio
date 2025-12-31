@@ -7,6 +7,14 @@ export default function Projects({
 }) {
   const projectData = [
     {
+      id: 7,
+      title: "Shadcn Dashboard",
+      imgUrl: "/images/shadcn-dash",
+      tags: ["Next", "Tailwind", "TypeScript", "shadcn"],
+      live: "https://shadcn-dash.netlify.app/",
+      gitHub: "https://github.com/joyce-ship-it/shadcn-dashboard",
+    },
+    {
       id: 6,
       title: "Weather Forecast App",
       imgUrl: "/images/weather-app-screenshot.png",
