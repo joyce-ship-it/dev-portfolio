@@ -9,7 +9,7 @@ export default function Projects({
     {
       id: 7,
       title: "Shadcn Dashboard",
-      imgUrl: "/images/shadcn-dash",
+      imgUrl: "/images/shadcn-dash.png",
       tags: ["Next", "Tailwind", "TypeScript", "shadcn"],
       live: "https://shadcn-dash.netlify.app/",
       gitHub: "https://github.com/joyce-ship-it/shadcn-dashboard",
