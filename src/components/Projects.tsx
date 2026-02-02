@@ -7,6 +7,14 @@ export default function Projects({
 }) {
   const projectData = [
     {
+      id: 8,
+      title: "Sneaker Product UI",
+      imgUrl: "/images/sneaker-product-ui.png",
+      tags: ["Next", "Tailwind", "TypeScript", "responsive"],
+      live: "https://product-ui-00.netlify.app/",
+      gitHub: "https://github.com/joyce-ship-it/product-ui",
+    },
+    {
       id: 7,
       title: "Shadcn Dashboard",
       imgUrl: "/images/shadcn-dash.png",
